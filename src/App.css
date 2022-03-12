@@ -1,38 +1,93 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 12vh;
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 65vh;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+#resume {
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+
+#resume:hover {
+  background-color: rgba(214, 212, 212, 0.5);
+}
+
+.heading1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.heading2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.heading3 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+#divider {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  width: 500px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(160, 157, 157);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#project {
+  border-radius: 20px;
+  height: 350px;
+  width: 450px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(96, 96, 102, 0.1);
 }
