@@ -18,10 +18,10 @@ function Slides({ slides }) {
 
     return (
         <>
-            <FaChevronLeft onClick={nextSlide} />
+            <FaChevronLeft onClick={prevSlide} />
             <Project content={slides[index1]} />
             <Project content={slides[index2]} />
-            <FaChevronRight onClick={prevSlide} />
+            <FaChevronRight onClick={nextSlide} />
         </>
     );
 }

@@ -1,6 +1,9 @@
 import React from 'react';
+import Carousel from 'react-elastic-carousel';
 import ContentBreak from './ContentBreak.jsx';
 import Slides from './Slides.jsx';
+import Project from './Project.jsx';
+
 
 function Projects() {
     const testContent = [
@@ -15,7 +18,10 @@ function Projects() {
         <div className="container">
             <ContentBreak content={"Featured Projects"} />
             <div id="projectContainer">
-                <Slides slides={testContent} />
+                <Carousel>
+                    <Project></Project>
+                    <Project></Project>
+                </Carousel>
             </div>
         </div>
     );
