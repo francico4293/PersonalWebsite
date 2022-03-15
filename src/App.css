@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;700;900&display=swap');
 
 * {
-
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +9,10 @@ body {
 }
 
 #nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -17,11 +21,34 @@ body {
   background-color: black;
 }
 
+#icon {
+  color: white;
+  margin-left: 70px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.link {
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all ease-in-out 0.10s;
+}
+
+.link:last-child {
+  margin-right: 50px;
+}
+
+.link:hover {
+  color: rgb(190, 190, 190);
+}
+
 .container {
   width: 100vw;
   height: 65vh;
   position: relative;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+  box-shadow: rgba(24, 24, 32, 0.1) 0px 2px 0px;
 }
 
 section {
@@ -85,9 +112,15 @@ section {
   border-radius: 20px;
   height: 350px;
   width: 450px;
-  position: relative;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 20px 0 20px;
   background-color: rgba(96, 96, 102, 0.1);
+}
+
+#projectContainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
 }

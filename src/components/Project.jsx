@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Project() {
+function Project({ content }) {
     return (
         <div id="project">
-                
+            {content}
         </div>
     );
 }
